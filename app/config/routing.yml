@@ -1,0 +1,11 @@
+mmitv_front:
+    resource: "@mmitvFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+
+mmitv_back:
+    resource: "@mmitvBackBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
