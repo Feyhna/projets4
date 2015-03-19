@@ -1,3 +1,4 @@
-mmitv_back_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: mmitvBackBundle:Default:index }
+mmitv_dashboard:
+    path :    /
+    defaults : {_controller: mmitvBackBundle:Default:index}
+
