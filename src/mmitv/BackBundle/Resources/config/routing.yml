@@ -1,3 +1,15 @@
-mmitv_back_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: mmitvBackBundle:Default:index }
+mmitv_dashboard:
+    path :    /
+    defaults : {_controller: mmitvBackBundle:Default:index}
+
+mmitv_user:
+    path :    /user
+    defaults : {_controller: mmitvBackBundle:User:index}
+
+mmitv_redacteur:
+    path : /redacteur
+    defaults : {_controller: mmitvBackBundle:Redacteur:index}
+
+mmitv_admin:
+    path :    /admin
+    defaults : {_controller: mmitvBackBundle:Admin:index}

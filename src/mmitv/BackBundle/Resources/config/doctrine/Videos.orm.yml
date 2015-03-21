@@ -1,0 +1,28 @@
+mmitv\BackBundle\Entity\Videos:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        videoHref:
+            type: string
+            length: '50'
+            column: video_href
+        videoNom:
+            type: string
+            length: '25'
+            column: video_nom
+        videoDebut:
+            type: decimal
+            column: video_debut
+        videoFin:
+            type: decimal
+            column: video_fin
+        videoPlateforme:
+            type: boolean
+            column: video_plateforme
+    lifecycleCallbacks: {  }
