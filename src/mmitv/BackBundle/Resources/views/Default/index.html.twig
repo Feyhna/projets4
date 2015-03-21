@@ -8,6 +8,11 @@
 
     {{ render(controller("FOSUserBundle:Security:login")) }}
 
-    <a href="/register") }}">S'inscrire</a><br/>
-    <a href="/request">Mot de passe oublié</a>
+    <a href="{{ path('fos_user_registration_register') }}">S'inscrire</a><br/>
+    <a href="{{ path('fos_user_resetting_request') }}">Mot de passe oublié</a><br/>
+
+    <p>
+        <a href="{{ path('mmitv_ifaceTV') }}">Accédez à l'interface TV</a>
+    </p>
+
 {% endblock %}

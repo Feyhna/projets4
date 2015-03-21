@@ -5,7 +5,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallbacks: ["%locale%"] }
+    translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -72,9 +72,22 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-# FOS User Bundle on mmitvBackBundle, voir pour les options possibles
+# FOS User Bundle on mmitvBackBundle, voir pour les options possibles // Template form
 #https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/configuration_reference.md
 fos_user:
     db_driver: orm
     firewall_name: main
     user_class: mmitv\BackBundle\Entity\User
+    registration:
+        confirmation: #need test
+            from_email:
+                address: no-reply@mmitv.fr
+                sender_name: MMI TV
+            enabled: true
+            template: FOSUserBundle:Registration:email.txt.twig
+    resetting:
+        email:
+            from_email:
+                address: no-reply@mmitv.com
+                sender_name: MMI TV
+            template: FOSUserBundle:Resetting:email.txt.twig

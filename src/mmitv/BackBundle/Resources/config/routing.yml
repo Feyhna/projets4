@@ -1,15 +1,19 @@
-mmitv_dashboard:
+mmitv_home:
     path :    /
     defaults : {_controller: mmitvBackBundle:Default:index}
 
-mmitv_user:
-    path :    /user
-    defaults : {_controller: mmitvBackBundle:User:index}
+mmitv_dashboard:
+    path :    /dashboard
+    defaults : {_controller: mmitvBackBundle:Dashboard:dashboard}
 
-mmitv_redacteur:
-    path : /redacteur
-    defaults : {_controller: mmitvBackBundle:Redacteur:index}
+mmitv_menu:
+    path :    /dashboard
+    defaults : {_conroller: mmitvBackBundle:Menu:menu}
 
-mmitv_admin:
-    path :    /admin
-    defaults : {_controller: mmitvBackBundle:Admin:index}
+mmitv_ifaceTV:
+    path :    /tv
+    defaults : {_controller: mmitvBackBundle:TV:index}
+
+mmitv_gestionUser:
+    path :    /dashboard/gestion-utilisateur
+    defaults : {_controller: mmitvBackBundle:GestionUtlisateur:afficheUser}
