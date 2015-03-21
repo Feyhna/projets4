@@ -1,3 +1,0 @@
-mmitv_front_homepage:
-    path:     /tv
-    defaults: { _controller: mmitvFrontBundle:Default:index }
