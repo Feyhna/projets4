@@ -1,0 +1,12 @@
+{% extends 'mmitvBackBundle::layout.html.twig' %}
+
+{% block menu %}
+    Bonjour {{ app.user.username }} -
+    {% if is_granted('ROLE_ADMIN') %}
+        <a href="">Gestion utilisateur</a> -
+    {% endif %}
+    {% if is_granted('ROLE_REDACTEUR') %}
+        <a href="">Playlists</a> - 
+    {% endif %}
+    <a href="{{ path('fos_user_security_logout') }}">Se déconnecter</a>
+{% endblock %}
