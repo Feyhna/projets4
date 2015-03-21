@@ -14,6 +14,6 @@ mmitv_ifaceTV:
     path :    /tv
     defaults : {_controller: mmitvBackBundle:TV:index}
 
-mmitv_gestionUser:
+mmitv_gestion_utilisateur:
     path :    /dashboard/gestion-utilisateur
-    defaults : {_controller: mmitvBackBundle:GestionUtlisateur:afficheUser}
+    defaults : {_controller: mmitvBackBundle:GestionUtilisateur:afficheUser}

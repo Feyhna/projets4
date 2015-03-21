@@ -2,11 +2,14 @@
 
 {% block menu %}
     Bonjour {{ app.user.username }} -
+    <a href="{{ path('mmitv_dashboard') }}">Accueil</a> -
     {% if is_granted('ROLE_ADMIN') %}
-        <a href="">Gestion utilisateur</a> -
+        <a href="{{ path('mmitv_gestion_utilisateur') }}">Gestion utilisateur</a> -
     {% endif %}
     {% if is_granted('ROLE_REDACTEUR') %}
-        <a href="">Playlists</a> - 
+        <a href="">Playlists</a> -
     {% endif %}
+    <a href="">Vidéos</a> -
+    <a href="">Paramètres du compte</a> -
     <a href="{{ path('fos_user_security_logout') }}">Se déconnecter</a>
 {% endblock %}

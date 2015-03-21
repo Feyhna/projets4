@@ -1,6 +1,6 @@
 {% extends 'mmitvBackBundle::layout.html.twig' %}
 
-{% block title %} - Tableau de Bord{% endblock %}
+{% block title %} {{ parent() }}- Tableau de Bord{% endblock %}
 
 {% block menu %}
     {% include 'mmitvBackBundle:Menu:menu.html.twig' %}

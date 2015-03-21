@@ -1,9 +1,22 @@
-{% extends 'mmitvBackBundle::layout.html.twig' %}
+{% extends 'mmitvBackBundle:Dashboard:dashboard.html.twig' %}
 
-{% block title %} - Gestion Utilisateurs{% endblock %}
+{% block title %} {{ parent() }}- Gestion Utilisateurs{% endblock %}
 
 {% block menu %}{{ parent() }}{% endblock %}
 
 {% block body %}
-    Affiche les utilisateurs sous tableau
+    Affiche les utilisateurs sous tableau<br/><br/>
+
+    <table>
+    {% for user in users %}
+
+        <tr>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td><a href="">Modifier</a></td>
+        <td><a href="">Supprimer</a></td>
+        </tr>
+
+    {% endfor %}
+    </table>
 {% endblock %}
