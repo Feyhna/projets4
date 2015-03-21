@@ -18,7 +18,6 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new mmitv\BackBundle\mmitvBackBundle(),
-            new mmitv\FrontBundle\mmitvFrontBundle(),
             new FOS\UserBundle\FOSUserBundle(),
         );
 
