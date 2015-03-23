@@ -29,12 +29,14 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+        fos_csrf_provider: "@form.csrf_provider"
 
 # Assetic Configuration
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ ]
+    bundles:        [mmitvBackBundle, FOSUserBundle]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -83,7 +85,7 @@ fos_user:
             from_email:
                 address: no-reply@mmitv.fr
                 sender_name: MMI TV
-            enabled: true
+            enabled: false
             template: FOSUserBundle:Registration:email.txt.twig
     resetting:
         email:

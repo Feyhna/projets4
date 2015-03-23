@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}MMI TV {% endblock %}</title>
+    {% stylesheets 'bundles/mmitvback/css/bootstrap.min.css' filter='cssrewrite' %}<link id="bootstrap-style" rel="stylesheet" href="{{ asset_url }}" />{% endstylesheets %}
+    {% stylesheets 'bundles/mmitvback/css/bootstrap-responsive.min.css' filter='cssrewrite' %}<link rel="stylesheet" href="{{ asset_url }}" />{% endstylesheets %}
+    {% stylesheets 'bundles/mmitvback/css/style.css'  filter='cssrewrite' %}<link id="base-style" rel="stylesheet" href="{{ asset_url }}" />{% endstylesheets %}
+    {% stylesheets 'bundles/mmitvback/css/style-responsive.css' filter='cssrewrite' %}<link id="bootstrap-style-responsive" rel="stylesheet" href="{{ asset_url }}" />{% endstylesheets %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+
+    <style>
+        .dropper {
+            margin: 50px 10px 10px 50px;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+
+            -moz-transition: all 200ms linear;
+            -webkit-transition: all 200ms linear;
+            -o-transition: all 200ms linear;
+            transition: all 200ms linear;
+        }
+
+        .drop_hover {
+            -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+        }
+
+    </style>
+
+</head>
+<body>
+<header>
+    {% block header %}
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="{{ path('mmitv_dashboard') }}"><span>MMI TV - Tableau de bord</span></a>
+
+                <!-- Closed in layoutdashboard.html.twig
+                 </div>
+            </div>
+        </div> -->
+   {% endblock %}
+</header>
+<div class="container-fluid-full">
+    <div class="row-fluid">
+        {% block menu %}{% endblock %}
+        {% block body %}{% endblock %}
+    </div><!--/#content.span10-->
+</div><!--/fluid-row-->
+<div class="modal hide fade" id="myModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3>Settings</h3>
+    </div>
+    <div class="modal-body">
+        <p>Here settings can be configured...</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
+<div class="clearfix"></div>
+<footer>
+    <p>
+        <span style="text-align:left;float:left">&copy; 2015 <a href="#">MMI TV</a></span>
+
+    </p>
+</footer>
+{% block javascripts %}
+    <!-- start: JavaScript-->
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery-1.9.1.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery-migrate-1.0.0.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery-ui-1.10.0.custom.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.ui.touch-punch.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/modernizr.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/bootstrap.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.cookie.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/fullcalendar.min.js' %}<script src='{{ asset_url }}'></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.dataTables.min.js' %}<script src='{{ asset_url }}'></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/excanvas.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.flot.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.flot.pie.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.flot.stack.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.flot.resize.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.chosen.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.uniform.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.cleditor.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.noty.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.elfinder.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.raty.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.iphone.toggle.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.uploadify-3.1.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.gritter.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.imagesloaded.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.masonry.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.knob.modified.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/jquery.sparkline.min.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/counter.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/retina.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+
+    {% javascripts '@mmitvBackBundle/Resources/public/js/custom.js' %}<script src="{{ asset_url }}"></script>{% endjavascripts %}
+    <!-- end: JavaScript-->
+{% endblock %}
+</body>
+</html>

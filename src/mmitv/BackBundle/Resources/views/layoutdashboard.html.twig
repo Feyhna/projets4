@@ -1,0 +1,21 @@
+{% extends '::basedashboard.html.twig' %}
+
+{% block header %}
+    {{ parent() }}
+    {% block dropdownmenu %}{% include 'mmitvBackBundle:Header:header.html.twig' %}{% endblock %}
+    </div>
+    </div>
+</div>
+{% endblock %}
+
+    {% block menu %}{% include 'mmitvBackBundle:Menu:menu.html.twig' %}{% endblock %}
+    {% block body %}
+        {% block breadcrumb %}
+            <ul class="breadcrumb">
+            <li>
+                <i class="icon-home"></i>
+                <a href="{{ path('mmitv_dashboard') }}">Accueil</a>
+                <i class="icon-angle-right"></i>
+            </li>
+        {% endblock %}
+    {% endblock %}
