@@ -1,22 +1,45 @@
-{% extends 'mmitvBackBundle:Dashboard:dashboard.html.twig' %}
+{% extends 'mmitvBackBundle::layoutdashboard.html.twig' %}
 
 {% block title %} {{ parent() }}- Gestion Utilisateurs{% endblock %}
 
-{% block menu %}{{ parent() }}{% endblock %}
-
 {% block body %}
-    Affiche les utilisateurs sous tableau<br/><br/>
+    <div id="content" class="span10">
 
-    <table>
-    {% for user in users %}
 
-        <tr>
-        <td>{{ user.username }}</td>
-        <td>{{ user.email }}</td>
-        <td><a href="">Modifier</a></td>
-        <td><a href="">Supprimer</a></td>
-        </tr>
-
-    {% endfor %}
-    </table>
+    {% block breadcrumb %}
+            {{ parent() }}
+            <li><a href="#">Gestion utilisateurs</a></li>
+            </ul>
+    {% endblock %}
+    <div class="row-fluid">
+        <div class="box span12">
+            <div class="box-header">
+                <h2><i class="icon-list-alt"></i>Utilisateurs</h2>
+            </div>
+            <div class="box-content">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Pseudo</th>
+                            <th>E-mail</th>
+                            <th>Dernière connexion</th>
+                            <th>Modifier</th>
+                            <th>Supprimer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for user in users %}
+                        <tr>
+                            <td>{{ user.username }}</td>
+                            <td class="center">{{ user.email }}</td>
+                            <td class="center">{{ user.lastLogin|date('d.m.Y') }}</td>
+                            <td class="center"><a href=""><i class="halflings-icon wrench"></i></a></td>
+                            <td class="center"><a href=""><i class="halflings-icon remove"></i></a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 {% endblock %}

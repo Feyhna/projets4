@@ -1,0 +1,443 @@
+{% extends 'mmitvBackBundle::layoutdashboard.html.twig' %}
+
+{% block title %} {{ parent() }}- Ajouter une vidéo{% endblock %}
+
+{% block body %}
+    <div id="content" class="span10">
+
+
+        {% block breadcrumb %}
+            {{ parent() }}
+            <li><a href="#">Ajouter une vidéo</a></li>
+            </ul>
+        {% endblock %}
+
+        <div class="row-fluid sortable">
+            <div class="box span12">
+
+                <div class="box-header" data-original-title>
+                    <h2><i class="halflings-icon user"></i><span class="break"></span>Ajouter une vidéo</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content" style="margin-bottom:40px;">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="control-group">
+                                <label class="control-label" for="typeahead">Catégorie</label>
+
+                                <div class="controls">
+                                    <input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Musiques","Making-off","Conférences","Tutoriel web"]'>
+                                    <p class="help-block">Commencer à écrire pour choisir la catégorie</p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="typeahead">Lien</label>
+                                <div class="controls">
+                                    <input type="text" class="span6">
+                                    <p class="help-block">Ajouter la cible du lien de la vidéo</p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="date01">Date d'ajout</label>
+                                <div class="controls">
+                                    <input type="text" class="input-xlarge datepicker" id="date01" value="03/16/15">
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Ajouter</button>
+                                <button type="reset" class="btn">Annuler</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="box-header" data-original-title>
+                    <h2><i class="halflings-icon user"></i><span class="break"></span>Vidéos ajoutées</h2>
+                    <div class="box-icon">
+                        <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content">
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                        <thead>
+                        <tr>
+                            <th>Utilisateur</th>
+                            <th>Date d'ajout</th>
+                            <th>Catégorie</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-info">Non-utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-info">Non-utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-info">Non-utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-info">Non-utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td class="center">22/03/2015</td>
+                            <td class="center">Musique</td>
+                            <td class="center">
+                                <span class="label label-success">Utilisée</span>
+                            </td>
+                            <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--/span-->
+
+            </div><!--/row-->
+
+        </div><!--/.fluid-container-->
+
+        <!-- end: Content -->
+    </div><!--/#content.span10-->
+{% endblock %}

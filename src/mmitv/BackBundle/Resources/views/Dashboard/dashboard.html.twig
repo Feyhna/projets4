@@ -1,11 +1,54 @@
-{% extends 'mmitvBackBundle::layout.html.twig' %}
+{% extends 'mmitvBackBundle::layoutdashboard.html.twig' %}
 
 {% block title %} {{ parent() }}- Tableau de Bord{% endblock %}
 
-{% block menu %}
-    {% include 'mmitvBackBundle:Menu:menu.html.twig' %}
-{% endblock %}
-
 {% block body %}
-    Bienvenue sur le tableau de bord
+    <!-- start: Content -->
+    <div id="content" class="span10">
+
+        {% block breadcrumb %}
+            {{ parent() }}
+            <li><a href="#">Dashboard</a></li>
+            </ul>
+        {% endblock %}
+
+        <div class="row-fluid">
+
+            {% if is_granted('ROLE_REDACTEUR') %}
+                <a href="{{ path('mmitv_createplaylist') }}" class="quick-button metro yellow span2">
+                    <i class="icon-align-justify"></i>
+                    <p>Créer une playlist</p>
+                </a>
+                <a href="{{ path('mmitv_editplaylist') }}" class="quick-button metro red span2">
+                    <i class="icon-tasks"></i>
+                    <p>Modifier une playlist</p>
+                    <span class="badge">13</span>
+                </a>
+                <a href="#" class="quick-button metro blue span2">
+                    <i class="icon-bar-chart"></i>
+                    <p>Créer un programme</p>
+                </a>
+                <a href="#" class="quick-button metro green span2">
+                    <i class="icon-barcode"></i>
+                    <p>Mod. un programme</p>
+                    <span class="badge">3</span>
+                </a>
+                <a href="{{ path('mmitv_grille') }}" class="quick-button metro black span2">
+                    <i class="icon-calendar"></i>
+                    <p>Voir la grille</p>
+                </a>
+            {% endif %}
+            <a href="{{ path('mmitv_addvideo') }}" class="quick-button metro pink span2">
+                <i class="icon-envelope"></i>
+                <p>Ajouter une vidéo</p>
+                <span class="badge">88</span>
+            </a>
+
+            <div class="clearfix"></div>
+
+        </div><!--/row-->
+
+
+
+    </div><!--/.fluid-container-->
 {% endblock %}

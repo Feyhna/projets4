@@ -17,3 +17,23 @@ mmitv_ifaceTV:
 mmitv_gestion_utilisateur:
     path :    /dashboard/gestion-utilisateur
     defaults : {_controller: mmitvBackBundle:GestionUtilisateur:afficheUser}
+
+mmitv_header:
+    path :    /dashboard
+    defaults : {_controller: mmitvBackBundle:Header:header}
+
+mmitv_addvideo:
+    path :    /add_video
+    defaults : {_controller: mmitvBackBundle:AddVideo:add}
+
+mmitv_createplaylist:
+    path :    /create_playlist
+    defaults : {_controller: mmitvBackBundle:CreatePlaylist:create}
+
+mmitv_editplaylist:
+    path :    /edit_playlist
+    defaults : {_controller: mmitvBackBundle:EditPlaylist:edit}
+
+mmitv_grille:
+    path :    /grille
+    defaults : {_controller: mmitvBackBundle:Grille:grille}

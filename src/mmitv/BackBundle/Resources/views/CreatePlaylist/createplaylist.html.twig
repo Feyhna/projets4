@@ -1,0 +1,81 @@
+{% extends 'mmitvBackBundle::layoutdashboard.html.twig' %}
+
+{% block title %} {{ parent() }}- Créer une playlist{% endblock %}
+
+{% block body %}
+    <div id="content" class="span10">
+
+
+        {% block breadcrumb %}
+            {{ parent() }}
+            <li><a href="#">Créer une playlist</a></li>
+            </ul>
+        {% endblock %}
+
+        <div class="row-fluid">
+
+            <div class="span7">
+                <h1>Ma playlist</h1>
+
+                <ul class="messagesList dropper" style="margin-top: 40px;">
+                    <h2>Vidéos ajoutées</h2>
+                    <li class="draggable">
+                        <span class="title"><span class="label label-success">Musiques</span> https://www.youtube.com/watch?v=Q704Fu2nwps</span><span class="date">Durée <b>3:47</b></span>
+                    </li>
+
+                    <li class="draggable">
+                        <span class="title"><span class="label label-warning">Tutoriel</span> https://www.youtube.com/watch?v=H7HLVzzhIzY</span><span class="date">Durée <b>3:42</b></span>
+                    </li>
+
+                    <li class="draggable">
+                        <span class="title"><span class="label label-alert">Conférence</span> https://www.youtube.com/watch?v=Q704Fu2nwps</span><span class="date">Durée <b>3:47</b></span>
+                    </li>
+
+                    <li class="draggable">
+                        <span class="title"><span class="label label-primary">Talk</span> https://www.youtube.com/watch?v=H7HLVzzhIzY</span><span class="date">Durée <b>3:42</b></span>
+                    </li>
+                </ul>
+
+                <button class="btn btn-success" style="margin-top:40px; margin-right:20px;">Enregistrer la playlist</button>
+                <button class="btn btn-info" style="margin-top:40px;">Consulter les playlists</button>
+            </div>
+            <div class="span5 noMarginLeft">
+
+                <div class="message dark">
+
+                    <div class="header">
+                        <h1>Les vidéos</h1>
+
+                        <ul class="messagesList dropper" style="margin-top: 40px;">
+                            <h2>Vidéos disponibles</h2>
+                            <li class="draggable">
+                                <span class="title"><span class="label label-success">Musiques</span> https://www.youtube.com/watch?v=Q704Fu2nwps</span><span class="date">Durée <b>3:47</b></span>
+                            </li>
+
+                            <li class="draggable">
+                                <span class="title"><span class="label label-warning">Tutoriel</span> https://www.youtube.com/watch?v=H7HLVzzhIzY</span><span class="date">Durée <b>3:42</b></span>
+                            </li>
+
+                            <li class="draggable">
+                                <span class="title"><span class="label label-alert">Conférence</span> https://www.youtube.com/watch?v=Q704Fu2nwps</span><span class="date">Durée <b>3:47</b></span>
+                            </li>
+
+                            <li class="draggable">
+                                <span class="title"><span class="label label-primary">Talk</span> https://www.youtube.com/watch?v=H7HLVzzhIzY</span><span class="date">Durée <b>3:42</b></span>
+                            </li>
+                        </ul>
+
+                        <button class="btn btn-success" style="margin-top:40px; margin-right:20px;">Ajouter une vidéo</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div><!--/.fluid-container-->
+{% endblock %}
