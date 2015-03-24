@@ -1,5 +1,20 @@
-{% extends "FOSUserBundle::layout.html.twig" %}
+{% extends "mmitvBackBundle::layoutdashboard.html.twig" %}
 
-{% block fos_user_content %}
-{% include "FOSUserBundle:Profile:show_content.html.twig" %}
-{% endblock fos_user_content %}
+{% block body %}
+
+<div id="content" class="span10">
+
+    {% block breadcrumb %}
+            {{ parent() }}
+            <li><a href="#">Mon profil</a></li>
+            </ul>
+    {% endblock %}
+
+    <div class="row-fluid">
+        {% block fos_user_content %}
+        {% include "FOSUserBundle:Profile:show_content.html.twig" %}
+        {% endblock fos_user_content %}
+    </div>
+</div>
+
+{% endblock %}
