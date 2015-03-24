@@ -26,6 +26,12 @@
             </div>
             <div class="clearfix"></div>
 
+            <label for="remember_me" class="remember">
+            <div class="checker" id="uniform-remember">
+                <span>
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on"></span></div>
+                {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
+            </label>
 
             <div class="button-login">
                 <input class="btn btn-primary" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />

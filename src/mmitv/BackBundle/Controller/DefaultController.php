@@ -22,7 +22,11 @@ class DefaultController extends Controller
         } else {
             $error = null;
         }
-
-        return $this->render('mmitvBackBundle:Default:index.html.twig', ['error' => $error]);
+        $securityContext = $this->container->get('security.context');
+        if ($securityContext->isGranted('IS_AUTHENTICATED_FULLY')) {
+            return $this->render('mmitvBackBundle:Dashboard:dashboard.html.twig');
+        }else {
+            return $this->render('mmitvBackBundle:Default:index.html.twig', ['error' => $error]);
+        }
     }
 }

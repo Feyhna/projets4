@@ -2,10 +2,19 @@
 
 <div class="box span7">
     <div class="box-header">
-        <h2><i class="icon-list-alt"></i>Mon profil</h2>
+        <h2><i class="icon-list-alt"></i><span class="break"></span>Mon profil</h2>
     </div>
         <div class="fos_user_user_show">
-            <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-            <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+            <table class="table">
+                <tbody>
+                    <tr><td><span class="label label-primary">{{ 'profile.show.username'|trans }}</span></td><td>{{ user.username }}</td></tr>
+                    <tr><td><span class="label label-primary">{{ 'profile.show.email'|trans }}</span></td><td>{{ user.email }}</td></tr>
+                </tbody>
+            </table>
+            <div class="form_actions">
+                <a href="{{ path('fos_user_profile_edit') }}"><button class="btn">Modifier mon profil</button></a>
+                <a href="{{ path('fos_user_change_password') }}"><button class="btn">Changer de mot de passe</button></a>
+            </div>
+            <br/>
         </div>
 </div>

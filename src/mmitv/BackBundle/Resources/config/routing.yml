@@ -23,17 +23,17 @@ mmitv_header:
     defaults : {_controller: mmitvBackBundle:Header:header}
 
 mmitv_addvideo:
-    path :    /add_video
+    path :    /dashboard/add_video
     defaults : {_controller: mmitvBackBundle:AddVideo:add}
 
 mmitv_createplaylist:
-    path :    /create_playlist
+    path :    /dashoboard/create_playlist
     defaults : {_controller: mmitvBackBundle:CreatePlaylist:create}
 
 mmitv_editplaylist:
-    path :    /edit_playlist
+    path :    /dashboard/edit_playlist
     defaults : {_controller: mmitvBackBundle:EditPlaylist:edit}
 
 mmitv_grille:
-    path :    /grille
+    path :    /dashboard//grille
     defaults : {_controller: mmitvBackBundle:Grille:grille}

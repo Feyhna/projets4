@@ -68,11 +68,9 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: "%mailer_transport%"
-    host:      "%mailer_host%"
-    username:  "%mailer_user%"
-    password:  "%mailer_password%"
-    spool:     { type: memory }
+    transport: gmail
+    username:  ngu.prisca@gmail.com
+    password:  The159falL753
 
 # FOS User Bundle on mmitvBackBundle, voir pour les options possibles // Template form
 #https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/configuration_reference.md
@@ -80,16 +78,26 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: mmitv\BackBundle\Entity\User
+    use_listener : true
+    use_flash_notifications : true
+    use_username_form_type : true
     registration:
-        confirmation: #need test
+        confirmation:
             from_email:
-                address: no-reply@mmitv.fr
+                address: ngu.prisca@gmail.com
                 sender_name: MMI TV
-            enabled: false
+            enabled: true
             template: FOSUserBundle:Registration:email.txt.twig
     resetting:
+        token_ttl : 86400
         email:
             from_email:
-                address: no-reply@mmitv.com
+                address: ngu.prisca@gmail.com
                 sender_name: MMI TV
             template: FOSUserBundle:Resetting:email.txt.twig
+    service :
+        mailer :                  fos_user.mailer.twig_swift
+        email_canonicalizer :     fos_user.util.canonicalizer.default
+        username_canonicalizer :  fos_user.util.canonicalizer.default
+        token_generator :         fos_user.util.token_generator.default
+        user_manager :            fos_user.user_manager.default
