@@ -2,7 +2,6 @@
 
 {% block title %} {{ parent() }} {% endblock %}
 
-
 {% block body %}
     <div class="container-fluid-full">
         <div class="row-fluid">
@@ -11,7 +10,7 @@
                 <h1>BIENVENUE SUR MMI TV !</h1>
                     <hr>
                     <button type="button" class="btn btn-warning">
-                        <a href="{{ path('mmitv_ifaceTV') }}">Accédez à l'interface TV</a>
+                        <a href="{{ path('mmitv_ifaceTV') }}" target="_blank">Accédez à l'interface TV</a>
                     </button>
                 </div>
                 <div class="login-box">
@@ -34,6 +33,13 @@
                                 <input type="hidden" name="_csrf_token" value="{{ fos_csrf_provider.generateCsrfToken('authenticate') }}" /><br/>
                             </div>
                             <div class="clearfix"></div>
+
+                            <label for="remember_me" class="remember">
+                                <div class="checker" id="uniform-remember">
+                                    <span><input type="checkbox" id="remember_me" name="_remember_me" value="on"></span>
+                                </div>
+                                {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
+                            </label>
 
                             <div class="button-login">
                                 <button type="submit" class="btn btn-primary">Se connecter</button>

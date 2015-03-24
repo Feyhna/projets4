@@ -1,6 +1,7 @@
 <div id="sidebar-left" class="span2">
     <div class="nav-collapse sidebar-nav">
         <ul class="nav nav-tabs nav-stacked main-menu">
+            <li><a href="{{ path('mmitv_ifaceTV') }}" target="_blank"><i class="icon-play"></i><span class="hidden-tablet"> Accès à l'interface TV</span></a></li>
             <li><a href="{{ path('mmitv_dashboard') }}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Tableau de bord</span></a></li>
             <li><a href="{{ path('mmitv_addvideo') }}"><i class="icon-edit"></i><span class="hidden-tablet"> Ajouter une vidéo</span></a></li>
             {% if is_granted('ROLE_REDACTEUR') %}

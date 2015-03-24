@@ -1,7 +1,17 @@
 {% extends "FOSUserBundle::layout.html.twig" %}
 
 {% trans_default_domain 'FOSUserBundle' %}
-
 {% block fos_user_content %}
-    <p>{{ 'registration.check_email'|trans({'%email%': user.email}) }}</p>
+<div class="container-fluid-full">
+    <div class="row-fluid">
+        <div class="row-fluid">
+            <div class="login-box">
+    <p style="text-align: justify;">{{ 'registration.check_email'|trans({'%email%': user.email}) }}</p>
+                <hr>
+                <h3><a href="{{ path('fos_user_security_login') }}">Se connecter</a></h3>
+                <h3><a href="{{ path('mmitv_home') }}">Retour à l'accueil</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock fos_user_content %}
