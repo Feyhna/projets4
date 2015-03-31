@@ -6,9 +6,9 @@ mmitv_dashboard:
     path :    /dashboard
     defaults : {_controller: mmitvBackBundle:Dashboard:dashboard}
 
-mmitv_menu:
-    path :    /dashboard
-    defaults : {_conroller: mmitvBackBundle:Menu:menu}
+#mmitv_menu:
+    #path :    /dashboard
+    #defaults : {_conroller: mmitvBackBundle:Menu:menu}
 
 mmitv_ifaceTV:
     path :    /tv
@@ -18,9 +18,9 @@ mmitv_gestion_utilisateur:
     path :    /dashboard/gestion-utilisateur
     defaults : {_controller: mmitvBackBundle:GestionUtilisateur:afficheUser}
 
-mmitv_header:
-    path :    /dashboard
-    defaults : {_controller: mmitvBackBundle:Header:header}
+#}mmitv_header:
+   # path :    /dashboard
+    #defaults : {_controller: mmitvBackBundle:Header:header}
 
 mmitv_addvideo:
     path :    /dashboard/add_video

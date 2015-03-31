@@ -6,7 +6,7 @@
 
         {% block breadcrumb %}
             {{ parent() }}
-            <li><a href="#">Mon Profil</a></li>
+            <li><a href="{{ path('fos_user_profile_show') }}">Mon Profil</a></li>
             <i class="icon-angle-right"></i>
             <li><a href="#">Modifier mon profil</a></li>
             </ul>
