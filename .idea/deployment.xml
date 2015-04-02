@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Projet S4">
-    <serverData>
-      <paths name="Projet S4">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="http://localhost/projets4/web/app_dev.php/" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
-  </component>
+  <component name="PublishConfigData" serverName="Projet S4" />
 </project>
+
