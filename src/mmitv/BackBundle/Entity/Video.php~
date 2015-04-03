@@ -38,9 +38,9 @@ class Video
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="video_duree", type="time")
+     * @ORM\Column(name="video_duree", type="time", nullable=true)
      */
-    private $videoDuree;
+    private $videoDuree = null;
 
     /**
      * @var string
@@ -48,6 +48,21 @@ class Video
      * @ORM\Column(name="video_plateforme", type="string", length=255)
      */
     private $videoPlateforme;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="video_type", type="string", length=255)
+     */
+    private $videoType;
+
+    /**
+     * @var datetime
+     *
+     * @ORM\Column(name="video_ajout", type="datetime")
+     */
+
+    private $videoAjout;
 
 
     /**
@@ -150,5 +165,51 @@ class Video
     public function getVideoPlateforme()
     {
         return $this->videoPlateforme;
+    }
+
+    /**
+     * Set videoType
+     *
+     * @param string $videoType
+     * @return Video
+     */
+    public function setVideoType($videoType)
+    {
+        $this->videoType = $videoType;
+
+        return $this;
+    }
+
+    /**
+     * Get videoType
+     *
+     * @return string 
+     */
+    public function getVideoType()
+    {
+        return $this->videoType;
+    }
+
+    /**
+     * Set videoAjout
+     *
+     * @param \DateTime $videoAjout
+     * @return Video
+     */
+    public function setVideoAjout($videoAjout)
+    {
+        $this->videoAjout = $videoAjout;
+
+        return $this;
+    }
+
+    /**
+     * Get videoAjout
+     *
+     * @return \DateTime 
+     */
+    public function getVideoAjout()
+    {
+        return $this->videoAjout;
     }
 }

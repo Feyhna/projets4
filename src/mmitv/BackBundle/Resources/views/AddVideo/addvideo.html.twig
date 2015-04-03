@@ -22,35 +22,12 @@
                     </div>
                 </div>
                 <div class="box-content" style="margin-bottom:40px;">
-                    <form class="form-horizontal">
-                        <fieldset>
-                            <div class="control-group">
-                                <label class="control-label" for="typeahead">Catégorie</label>
+                    {#
 
-                                <div class="controls">
-                                    <input type="text" class="span6 typeahead" id="typeahead"  data-provide="typeahead" data-items="4" data-source='["Musiques","Making-off","Conférences","Tutoriel web"]'>
-                                    <p class="help-block">Commencer à écrire pour choisir la catégorie</p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="typeahead">Lien</label>
-                                <div class="controls">
-                                    <input type="text" class="span6">
-                                    <p class="help-block">Ajouter la cible du lien de la vidéo</p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="date01">Date d'ajout</label>
-                                <div class="controls">
-                                    <input type="text" class="input-xlarge datepicker" id="date01" value="03/16/15">
-                                </div>
-                            </div>
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Ajouter</button>
-                                <button type="reset" class="btn">Annuler</button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    AFFICHAGE DU FORMULAIRE DEPUIS addform.html.twig
+
+                    #}
+                    {{ render(controller('mmitvBackBundle:AddVideo:addform')) }}
                 </div>
                 <div class="box-header" data-original-title>
                     <h2><i class="halflings-icon user"></i><span class="break"></span>Vidéos ajoutées</h2>
