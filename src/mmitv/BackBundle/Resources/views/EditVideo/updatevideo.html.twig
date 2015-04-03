@@ -1,0 +1,87 @@
+{% extends 'mmitvBackBundle::layoutdashboard.html.twig' %}
+
+{% block title %} {{ parent() }}- Modifier une vidéo{% endblock %}
+
+{% block body %}
+    <div id="content" class="span10">
+
+
+        {% block breadcrumb %}
+            {{ parent() }}
+            <li><a href="#">Modifier une vidéo</a></li>
+            </ul>
+        {% endblock %}
+
+        <div class="row-fluid sortable">
+            <div class="box span12">
+
+                <div class="box-header" data-original-title>
+                    <h2><i class="halflings-icon user"></i><span class="break"></span>Ajouter une vidéo</h2>
+
+                    <div class="box-icon">
+                        <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="box-content" style="margin-bottom:40px;">
+
+                    {{ form_start(form, {'attr' : { 'class':'form-horizontal' }}) }}
+
+                    <fieldset>
+                        <div class="control-group">
+                            {{ form_label(form.videoType, 'Catégorie', {'label_attr' : {'class' : 'control-label' }}) }}
+
+                            <div class="controls">
+                                {{ form_widget(form.videoType, {'attr' : {'class' : 'span6 typeahead', 'id': 'typeahead', 'data-provide': 'typeahead', 'data-items': '4', 'data-source': '["Musiques","Making-off","Conférences","Tutoriel Web"]' }}
+                                ) }}
+                                <p class="help-block">Commencer à écrire pour choisir la catégorie</p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form_label(form.videoNom, 'Nom de la vidéo', {'label_attr' : {'class': 'control-label' }}
+                            ) }}
+                            <div class="controls">
+                                {{ form_widget(form.videoNom, {'attr': {'class': 'span6' }}) }}
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form_label(form.videoHref, 'Lien de la vidéo', {'label_attr' : {'class': 'control-label' }}
+                            ) }}
+                            <div class="controls">
+                                {{ form_widget(form.videoHref, {'attr': {'class': 'span6' }}) }}
+                                <p class="help-block">Ajouter la cible du lien de la vidéo</p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form_label(form.videoPlateforme, 'Plateforme', {'label_attr' : {'class' : 'control-label' }}
+                            ) }}
+                            <div class="controls">
+                                {{ form_widget(form.videoPlateforme, {'attr': {'class': 'span6' }}) }}
+                            </div>
+
+                        </div>
+                        <div class="control-group">
+                            {{ form_label(form.videoAjout, 'Date d\'ajout', {'label_attr': {'class': 'control-label' }})
+                            }}
+                            <div class="controls">
+                                {{ form_widget(form.videoAjout, {'attr': {'class': 'input-xlarge', 'id':'date01' }}) }}
+
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            {{ form_widget(form.save, {'attr': {'class':'btn btn-primary' }}) }}
+                            <button type="reset" class="btn">Annuler</button>
+                        </div>
+                    </fieldset>
+                    {{ form_rest(form) }}
+                    {{ form_end(form) }}
+
+                </div>
+            </div>
+            <!--/row-->
+
+        </div>
+        <!--/.fluid-container-->
+
+        <!-- end: Content -->
+    </div><!--/#content.span10-->
+{% endblock %}

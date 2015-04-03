@@ -14,7 +14,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 class AddVideoController extends Controller
 {
-    public function addAction(Request $request){
+    public function addAction(Request $request)
+    {
 
         $video = new Video();
 
@@ -22,7 +23,7 @@ class AddVideoController extends Controller
 
         $form->handleRequest($request);
 
-        if ($form->isValid()){
+        if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($video);
             $em->flush();
@@ -33,7 +34,6 @@ class AddVideoController extends Controller
         }
 
         return $this->render('mmitvBackBundle:AddVideo:addvideo.html.twig');
-
 
 
     }
@@ -48,6 +48,17 @@ class AddVideoController extends Controller
             'form' => $form->createView()
         ));
 
+    }
+
+    public function gestionvideoAction()
+    {
+        $em = $this->getDoctrine()->getManager()->getRepository('mmitvBackBundle:Video');
+
+        $queryvideo = $em->findAll();
+
+        return $this->render('mmitvBackBundle:AddVideo:gestionvideo.html.twig', array(
+            'video' => $queryvideo
+        ));
     }
 
 

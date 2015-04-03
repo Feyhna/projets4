@@ -37,3 +37,15 @@ mmitv_editplaylist:
 mmitv_grille:
     path :    /dashboard//grille
     defaults : {_controller: mmitvBackBundle:Grille:grille}
+
+mmitv_updatevideo:
+    path : /dashboard/updatevideo/{id}
+    defaults : { _controller: mmitvBackBundle:EditVideo:update}
+    requirements:
+        id : \d*
+
+mmitv_deletevideo:
+    path : /dashboard/deletevideo/{id}
+    defaults : { _controller: mmitvBackBundle:EditVideo:delete}
+    requirements:
+        id : \d*
