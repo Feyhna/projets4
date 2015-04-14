@@ -11,23 +11,23 @@
 
 /* Import Section
 =================================================================== */
-@import url("../bundles/mmitvback/css/jquery-ui-1.8.21.custom.css");								/* jQuery User Interface Framework Styles */
-@import url("../bundles/mmitvback/css/fullcalendar.css");										/* Calendars Styles */
-@import url("../bundles/mmitvback/css/chosen.css");												/* Select Boxes Styles */  
-@import url("../bundles/mmitvback/css/uniform.default.css");										/* Uniform Styles */
-@import url("../bundles/mmitvback/css/jquery.cleditor.css");										/* Text Editor Styles. */  
-@import url("../bundles/mmitvback/css/jquery.noty.css");											/* Noty Notifications Style */
-@import url("../bundles/mmitvback/css/noty_theme_default.css");									/* Noty Notifications Style */
-@import url("../bundles/mmitvback/css/elfinder.min.css");										/* File Manager Style */
-@import url("../bundles/mmitvback/css/elfinder.theme.css");										/* File Manager Style */
-@import url("../bundles/mmitvback/css/jquery.iphone.toggle.css");								/* Styles for iPhone */
-@import url("../bundles/mmitvback/css/uploadify.css");											/* Uploadify Styles */
-@import url("../bundles/mmitvback/css/jquery.gritter.css");										/* Growl Like Notifications Styles */
-@import url("../bundles/mmitvback/css/font-awesome.min.css");									/* Font Awesome Styles */
-@import url("../bundles/mmitvback/css/font-awesome-ie7.min.css");								/* Font Awesome Styles */
-@import url("../bundles/mmitvback/css/glyphicons.css");											/* Glyphicons Font */
-@import url("../bundles/mmitvback/css/halflings.css");											/* Glyphicons Halflings Font */
-@import url("../bundles/mmitvback/css/style-forms.css");											/* Forms */
+@import url("../../bundles/mmitvback/css/jquery-ui-1.8.21.custom.css");								/* jQuery User Interface Framework Styles */
+@import url("../../bundles/mmitvback/css/fullcalendar.css");										/* Calendars Styles */
+@import url("../../bundles/mmitvback/css/chosen.css");												/* Select Boxes Styles */  
+@import url("../../bundles/mmitvback/css/uniform.default.css");										/* Uniform Styles */
+@import url("../../bundles/mmitvback/css/jquery.cleditor.css");										/* Text Editor Styles. */  
+@import url("../../bundles/mmitvback/css/jquery.noty.css");											/* Noty Notifications Style */
+@import url("../../bundles/mmitvback/css/noty_theme_default.css");									/* Noty Notifications Style */
+@import url("../../bundles/mmitvback/css/elfinder.min.css");										/* File Manager Style */
+@import url("../../bundles/mmitvback/css/elfinder.theme.css");										/* File Manager Style */
+@import url("../../bundles/mmitvback/css/jquery.iphone.toggle.css");								/* Styles for iPhone */
+@import url("../../bundles/mmitvback/css/uploadify.css");											/* Uploadify Styles */
+@import url("../../bundles/mmitvback/css/jquery.gritter.css");										/* Growl Like Notifications Styles */
+@import url("../../bundles/mmitvback/css/font-awesome.min.css");									/* Font Awesome Styles */
+@import url("../../bundles/mmitvback/css/font-awesome-ie7.min.css");								/* Font Awesome Styles */
+@import url("../../bundles/mmitvback/css/glyphicons.css");											/* Glyphicons Font */
+@import url("../../bundles/mmitvback/css/halflings.css");											/* Glyphicons Halflings Font */
+@import url("../../bundles/mmitvback/css/style-forms.css");											/* Forms */
 
 /* Main Colors
 =================================================================== */
@@ -1419,7 +1419,7 @@ ul.chat li.left .message .arrow {
 	position: absolute;
 	top: 5px;
 	left: -20px;
-	background: url(../bundles/mmitvback/img/chat-left.png) no-repeat 0px 0px;
+	background: url(../../bundles/mmitvback/img/chat-left.png) no-repeat 0px 0px;
 }
 
 ul.chat li.right .message .arrow {
@@ -1429,7 +1429,7 @@ ul.chat li.right .message .arrow {
 	position: absolute;
 	top: 5px;
 	right: -20px;
-	background: url(../bundles/mmitvback/img/chat-right.png) no-repeat 0px 0px;
+	background: url(../../bundles/mmitvback/img/chat-right.png) no-repeat 0px 0px;
 }
 
 ul.chat li.right .message {
@@ -1483,12 +1483,12 @@ ul.chat.metro li .message {
 
 ul.chat.metro li.left .message .arrow {
 	left: -22px;
-	background: url(../bundles/mmitvback/img/chat-left-metro.png) no-repeat 0px 0px;
+	background: url(../../bundles/mmitvback/img/chat-left-metro.png) no-repeat 0px 0px;
 }
 
 ul.chat.metro li.right .message .arrow {
 	right: -22px;
-	background: url(../bundles/mmitvback/img/chat-right-metro.png) no-repeat 0px 0px;
+	background: url(../../bundles/mmitvback/img/chat-right-metro.png) no-repeat 0px 0px;
 }
 
 /* Forms
@@ -2139,12 +2139,12 @@ div.uploader{
 	height: 16px;
 	width: 16px;
 	position: absolute !important;
-	background: url("../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll #f4f4f4 !important;
-	background: url("../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -webkit-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
-	background: url("../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -moz-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
-	background: url("../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -o-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
-	background: url("../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -ms-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
-	background: url("../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
+	background: url("../../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll #f4f4f4 !important;
+	background: url("../../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -webkit-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
+	background: url("../../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -moz-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
+	background: url("../../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -o-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
+	background: url("../../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, -ms-linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
+	background: url("../../bundles/mmitvback/img/slider_r8.png") no-repeat center center scroll, linear-gradient(top , #F4F4F4 0%, #F7F7F7 100%) !important;
 	margin-top: -1px !important;
 	outline: none !important;
 }
@@ -2594,7 +2594,7 @@ footer {
 /* Typography - Blockquote
 =================================================================== */	
 blockquote {
-	background: url(../bundles/mmitvback/img/quote.png) no-repeat 0px 10px;
+	background: url(../../bundles/mmitvback/img/quote.png) no-repeat 0px 10px;
 	font-style: italic;
 	border-left: none;
 	padding: 0 0 0 30px;
@@ -2832,7 +2832,7 @@ ul.messagesList li span.date {
 	width: auto;
 	height: 100%;
 	margin: 20px auto; 
-	background: url(../bundles/mmitvback/img/timeline-bg.png) repeat-y center top; 
+	background: url(../../bundles/mmitvback/img/timeline-bg.png) repeat-y center top; 
 }
 
 .timeslot {
@@ -2886,7 +2886,7 @@ ul.messagesList li span.date {
 	right: 0px;
 	height: 20px;
 	width: 20px;
-	background: url(../bundles/mmitvback/img/timeline-left-arrow.png) no-repeat;
+	background: url(../../bundles/mmitvback/img/timeline-left-arrow.png) no-repeat;
 }
 
 .timeslot.alt .task .arrow {
@@ -2895,7 +2895,7 @@ ul.messagesList li span.date {
 	left: 0px;
 	height: 20px;
 	width: 20px;
-	background: url(../bundles/mmitvback/img/timeline-right-arrow.png) no-repeat;
+	background: url(../../bundles/mmitvback/img/timeline-right-arrow.png) no-repeat;
 }
 
 .timeslot .icon {
@@ -2943,32 +2943,32 @@ ul.messagesList li span.date {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	
 	.timeslot .task .arrow {
-		background: url(../bundles/mmitvback/img/timeline-left-arrow@2x.png) no-repeat;
+		background: url(../../bundles/mmitvback/img/timeline-left-arrow@2x.png) no-repeat;
 		background-size: 100%;
 	}
 	
 	.timeslot.alt .task .arrow {
-		background: url(../bundles/mmitvback/img/timeline-right-arrow@2x.png) no-repeat;
+		background: url(../../bundles/mmitvback/img/timeline-right-arrow@2x.png) no-repeat;
 		background-size: 100%;
 	}
 	
 	ul.chat li.left .message .arrow {
-		background: url(../bundles/mmitvback/img/chat-left@2x.png) no-repeat 0px 0px;
+		background: url(../../bundles/mmitvback/img/chat-left@2x.png) no-repeat 0px 0px;
 		background-size: 100%;
 	}
 
 	ul.chat li.right .message .arrow {
-		background: url(../bundles/mmitvback/img/chat-right@2x.png) no-repeat 0px 0px;
+		background: url(../../bundles/mmitvback/img/chat-right@2x.png) no-repeat 0px 0px;
 		background-size: 100%;
 	}
 	
 	ul.chat.metro li.left .message .arrow {
-		background: url(../bundles/mmitvback/img/chat-left-metro@2x.png) no-repeat 0px 0px;
+		background: url(../../bundles/mmitvback/img/chat-left-metro@2x.png) no-repeat 0px 0px;
 		background-size: 100%;
 	}
 
 	ul.chat.metro li.right .message .arrow {
-		background: url(../bundles/mmitvback/img/chat-right-metro@2x.png) no-repeat 0px 0px;
+		background: url(../../bundles/mmitvback/img/chat-right-metro@2x.png) no-repeat 0px 0px;
 		background-size: 100%;
 	}
     

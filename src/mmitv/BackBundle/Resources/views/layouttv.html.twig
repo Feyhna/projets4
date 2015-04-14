@@ -1,1 +1,34 @@
 {% extends "::basetv.html.twig" %}
+
+{% block title %}{{ parent() }} - Live{% endblock %}
+
+{% block body %}
+<div class="screen">
+
+    <div class="logo">
+        <h1 class="mmi">MMI</h1><h1 class="tv">TV</h1>
+    </div>
+
+    <div class="heure">
+        <p id="heure"></p>
+    </div>
+
+    <script>
+        function afficher() {
+            var offsetUTC = +12,
+                    oD = new Date();
+
+            var h = oD.getHours();
+            var m = oD.getMinutes();
+            //var s = oD.getSeconds();
+            if(m<10) { m = "0"+m; }
+            //if(s<10) { s = "0"+s; }
+            document.getElementById('heure').innerHTML = h+":"+m;
+        }
+
+        window.onload=function() {
+            afficher();
+            setInterval(afficher,1000);
+        }
+    </script>
+{% endblock %}

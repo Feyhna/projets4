@@ -1,7 +1,54 @@
 {% extends "mmitvBackBundle::layouttv.html.twig" %}
-
-{% block title %}{{ parent() }} - Live{% endblock %}
-
 {% block body %}
-Interface TV
+{{ parent() }}
+                          <!-- Ecran vidéo -->
+		<video id="video" controls preload="auto" style="position:absolute z-index:1000" >
+        <source src="video/interview Webtv3.mp4" type='video/mp4'>
+            <p>Si la vidéo n'est pas lisible, mettez à jour vos pluggins.</p>
+        </video>
+
+                          <!-- Bug -->
+        {{ render(controller('mmitvBackBundle:TV:bug')) }}
+
+                        <!-- Annonce -->
+
+      {{ render(controller('mmitvBackBundle:TV:info')) }}
+
+
+                          <!-- Emploi du temps -->
+        {{ render(controller('mmitvBackBundle:TV:edt')) }}
+
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+          $("#hide-bottom").delay(500).slideToggle(3000)
+                          .delay(20000).slideToggle(3000)
+                          .delay(500).slideToggle(3000);
+  });
+$( document ).ready(function() {
+  $(".title-bug").delay(4000).animate({right:"-695px"},1800)
+                .delay(5000).animate({right:"295px"},1800)
+                .delay(5000).animate({right:"-695px"},1800);
+
+
+});
+$(document).ready(function(){
+          $(".container-groupe").delay(500).slideToggle(3000)
+                          .delay(20000).slideToggle(3000)
+                          .delay(500).slideToggle(3000);
+  });
+
+$( document ).ready(function() {
+
+  $(".bug-text").delay(4000).animate({right:"-1077px"}, 1800)
+                .delay(6000).animate({right:"-27px"}, 1500)
+                .delay(4000).animate({right:"-1077px"}, 1500);
+
+});
+
+</script>
+
+
 {% endblock %}
