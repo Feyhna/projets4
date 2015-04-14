@@ -10,6 +10,7 @@
                             <span class="add-on"><i class="halflings-icon inbox"></i></span>
                             {% if invalid_username is defined %}
                                 <p>{{ 'resetting.request.invalid_username'|trans({'%username%': invalid_username}) }}</p>
+                                
                             {% endif %}
                             <input type="text" id="username" name="username" required="required" class="input-large span10" placeholder="{{ 'resetting.request.username'|trans }}"/>
                         </div>

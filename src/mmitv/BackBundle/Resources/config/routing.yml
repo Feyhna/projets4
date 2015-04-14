@@ -6,34 +6,38 @@ mmitv_dashboard:
     path :    /dashboard
     defaults : {_controller: mmitvBackBundle:Dashboard:dashboard}
 
-#mmitv_menu:
-    #path :    /dashboard
-    #defaults : {_conroller: mmitvBackBundle:Menu:menu}
-
 mmitv_ifaceTV:
     path :    /tv
     defaults : {_controller: mmitvBackBundle:TV:index}
 
 mmitv_gestion_utilisateur:
     path :    /dashboard/gestion-utilisateur
-    defaults : {_controller: mmitvBackBundle:GestionUtilisateur:afficheUser}
+    defaults : {_controller: mmitvBackBundle:GestionUtilisateur:index}
 
-#}mmitv_header:
-   # path :    /dashboard
-    #defaults : {_controller: mmitvBackBundle:Header:header}
+mmitv_gestion_utilisateur_promouvoir:
+    path :    /dashboard/gestion-utilisateur/promouvoir-{id}
+    defaults : {_controller: mmitvBackBundle:GestionUtilisateur:promote}
+
+mmitv_gestion_utilisateur_downgrade:
+    path :    /dashboard/gestion-utilisateur/downgrade-{id}
+    defaults : {_controller: mmitvBackBundle:GestionUtilisateur:downgrade}
+
+mmitv_gestion_utilisateur_supprimer:
+    path :    /dashboard/gestion-utilisateur/supprimer-{id}
+    defaults : {_controller: mmitvBackBundle:GestionUtilisateur:supprimer}
 
 mmitv_addvideo:
-    path :    /dashboard/add_video
+    path :    /dashboard/video/ajouter_video
     defaults : {_controller: mmitvBackBundle:AddVideo:add}
 
 mmitv_createplaylist:
-    path :    /dashoboard/create_playlist
+    path :    /dashboard/playlist/creer_playlist
     defaults : {_controller: mmitvBackBundle:CreatePlaylist:create}
 
 mmitv_editplaylist:
-    path :    /dashboard/edit_playlist
+    path :    /dashboard/playlist/editer_playlist
     defaults : {_controller: mmitvBackBundle:EditPlaylist:edit}
 
 mmitv_grille:
-    path :    /dashboard//grille
+    path :    /dashboard/grille
     defaults : {_controller: mmitvBackBundle:Grille:grille}
