@@ -31,11 +31,7 @@ mmitv_addvideo:
     defaults : {_controller: mmitvBackBundle:AddVideo:add}
 
 mmitv_createplaylist:
-<<<<<<< HEAD
-    path :    /dashboard/create_playlist
-=======
     path :    /dashboard/playlist/creer_playlist
->>>>>>> origin/master
     defaults : {_controller: mmitvBackBundle:CreatePlaylist:create}
 
 mmitv_editplaylist:
@@ -58,7 +54,7 @@ mmitv_deletevideo:
     requirements:
         id : \d*
 
-<<<<<<< HEAD
+
 mmitv_deleteplaylist:
     path: /dashboard/deleteplaylist/{id}
     defaults : { _controller: mmitvBackBundle:EditPlaylist:removePlaylist}
@@ -84,7 +80,7 @@ mmitv_addvideoplaylist:
     requirements:
         playlist_id: \d*
         video_id : \d*
-=======
+
 mmitv_info:
     path:   /dashboard/infos
     defaults : {_controller: mmitvBackBundle:Info:index}
@@ -100,4 +96,4 @@ mmitv_info_delete:
 mmitv_info_edit:
     path:   /dashboard/infos/modifier/{id}
     defaults: {_controller: mmitvBackBundle:Info:edit}
->>>>>>> origin/master
+
