@@ -17,14 +17,16 @@
                 <h2><i class="icon-list-alt"></i>Supprimer</h2>
             </div>
             <br/>
-            <h3>Êtes-vous sûr(e) de supprimer l'utilisateur {{ user.username }} ?</h3>
-            <form action="{{ path('mmitv_gestion_utilisateur_supprimer', {'id': user.id}) }}" method="post">
-                <a href="{{ path('mmitv_gestion_utilisateur') }}" class="btn btn-default">
-                    Retour
-                </a>
-                <input type="submit" value="Supprimer" class="btn btn-warning" />
-                {{ form_rest(form) }}
-            </form>
+            <div class="box-content">
+                <h3>Êtes-vous sûr(e) de supprimer l'utilisateur {{ user.username }} ?</h3>
+                <form action="{{ path('mmitv_gestion_utilisateur_supprimer', {'id': user.id}) }}" method="post">
+                    <a href="{{ path('mmitv_gestion_utilisateur') }}" class="btn btn-default">
+                        Retour
+                    </a>
+                    <input type="submit" value="Supprimer" class="btn btn-warning" />
+                    {{ form_rest(form) }}
+                </form>
+            </div>
         </div>
     </div>
 </div>

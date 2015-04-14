@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fd570336-79ee-499a-b816-5d1af345e47f" name="Default" comment="" />
+=======
+    <list default="true" id="fd570336-79ee-499a-b816-5d1af345e47f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+>>>>>>> prisca
     <ignored path="projets4.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -49,9 +55,20 @@
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="969">
               <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
               <folding />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="816">
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <folding>
+                <marker date="1429015030135" expanded="true" signature="1214:1231" placeholder="requirements:" />
+                <marker date="1429015030135" expanded="true" signature="1281:1408" placeholder="mmitv_deletevideo:" />
+                <marker date="1429015030135" expanded="true" signature="1350:1408" placeholder="defaults :" />
+                <marker date="1429015030135" expanded="true" signature="1364:1408" placeholder="requirements:" />
+              </folding>
+>>>>>>> prisca
             </state>
           </provider>
         </entry>
@@ -59,6 +76,7 @@
       <file leaf-file-name="addvideo.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/AddVideo/addvideo.html.twig">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.33816424" vertical-offset="827" max-vertical-offset="1496">
               <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
               <folding />
@@ -91,6 +109,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.576923" vertical-offset="470" max-vertical-offset="1139">
               <caret line="56" column="69" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+=======
+            <state vertical-scroll-proportion="0.3338633" vertical-offset="6981" max-vertical-offset="7633">
+              <caret line="422" column="36" selection-start-line="422" selection-start-column="36" selection-end-line="422" selection-end-column="36" />
+>>>>>>> prisca
               <folding />
             </state>
           </provider>
@@ -99,25 +121,94 @@
       <file leaf-file-name="AddVideoController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/AddVideoController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-17.653847" vertical-offset="51" max-vertical-offset="1105">
               <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
               <folding>
                 <element signature="e#129#163#0#PHP" expanded="true" />
               </folding>
+=======
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="289">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding />
+>>>>>>> prisca
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+<<<<<<< HEAD
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+=======
+>>>>>>> prisca
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/config/config_test.yml" />
+        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
+        <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layoutdashboard.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/Header/header.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/checkEmail.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/checkEmail.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/passwordAlreadyRequested.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword_content.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Controller/Default.php" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/Menu/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/TV/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/layoutdashboard.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/afficheprofil.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/edituser.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/supprimeruser.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/afficheuser.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/basedashboard.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/view/error.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/view/error404.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/public/css/error.css" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/view/error403.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/supprimer.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/promote.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/downgrade.html.twig" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Controller/GestionUtilisateurController.php" />
+        <option value="$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/validation.html.twig" />
+      </list>
+    </option>
+  </component>
+>>>>>>> prisca
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -318,8 +409,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+<<<<<<< HEAD
     <property name="dynamic.classpath" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+=======
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+>>>>>>> prisca
   </component>
   <component name="RunManager" selected="JavaScript Debug.DefaultController.php">
     <configuration default="false" name="layout.html.twig" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/http:/localhost/projets4/web/app_dev.php/app/Resources/FOSUserBundle/views/layout.html.twig">
@@ -389,8 +484,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <editor active="false" />
+=======
+    <frame x="-4" y="-4" width="1374" height="776" extended-state="6" />
+    <editor active="true" />
+>>>>>>> prisca
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27123287" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -398,7 +498,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21890146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26435935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26281112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> prisca
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25928918" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -435,6 +539,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/EditVideoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
@@ -566,25 +671,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08108108" vertical-offset="0" max-vertical-offset="629">
           <caret line="3" column="143" selection-start-line="3" selection-start-column="143" selection-end-line="3" selection-end-column="143" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1891892" vertical-offset="0" max-vertical-offset="629">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="8" selection-end-column="12" />
+>>>>>>> prisca
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.027027028" vertical-offset="0" max-vertical-offset="629">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="49" />
+=======
+        <state vertical-scroll-proportion="0.4412214" vertical-offset="0" max-vertical-offset="655">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+>>>>>>> prisca
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.08108108" vertical-offset="0" max-vertical-offset="629">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="37" />
+=======
+        <state vertical-scroll-proportion="0.2972973" vertical-offset="0" max-vertical-offset="629">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+>>>>>>> prisca
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.9459459" vertical-offset="850" max-vertical-offset="1598">
           <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
         </state>
@@ -606,6 +728,294 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33766234" vertical-offset="353" max-vertical-offset="969">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+=======
+        <state vertical-scroll-proportion="0.2972973" vertical-offset="0" max-vertical-offset="629">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.16216215" vertical-offset="0" max-vertical-offset="629">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="629">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.6875" vertical-offset="0" max-vertical-offset="615">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+=======
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="459">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="19" selection-end-column="6" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.70625" vertical-offset="21" max-vertical-offset="525">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+=======
+        <state vertical-scroll-proportion="0.4864865" vertical-offset="0" max-vertical-offset="629">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.5" vertical-offset="45" max-vertical-offset="525">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.37578288" vertical-offset="0" max-vertical-offset="479">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.21621622" vertical-offset="0" max-vertical-offset="629">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="35" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.70238096" vertical-offset="1116" max-vertical-offset="1620">
+          <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
+=======
+        <state vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="629">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/afficheuser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.61504424" vertical-offset="63" max-vertical-offset="765">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="47" />
+=======
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="646">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="49" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+=======
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="340">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Entity/VideoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="679">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.08108108" vertical-offset="0" max-vertical-offset="629">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.53097343" vertical-offset="0" max-vertical-offset="678">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/CreatePlaylistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.3243243" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="12" column="94" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="94" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/basedashboard.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="1.4159292" vertical-offset="0" max-vertical-offset="2220">
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+=======
+        <state vertical-scroll-proportion="0.054054055" vertical-offset="0" max-vertical-offset="629">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.3318584" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+=======
+        <state vertical-scroll-proportion="0.08108108" vertical-offset="0" max-vertical-offset="629">
+          <caret line="3" column="143" selection-start-line="3" selection-start-column="143" selection-end-line="3" selection-end-column="143" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Entity/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-36.25" vertical-offset="45" max-vertical-offset="3315">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.027027028" vertical-offset="0" max-vertical-offset="629">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="49" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/EditVideo/updatevideo.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.22900763" vertical-offset="0" max-vertical-offset="1380">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Form/VideoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5954198" vertical-offset="0" max-vertical-offset="795">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.08108108" vertical-offset="0" max-vertical-offset="629">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="37" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="855">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.9459459" vertical-offset="850" max-vertical-offset="1598">
+          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/AddVideo/addform.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="850">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/AddVideo/gestionvideo.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="442">
+          <caret line="15" column="88" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/EditVideoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-16.576923" vertical-offset="470" max-vertical-offset="1139">
+          <caret line="56" column="69" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.5675676" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+>>>>>>> prisca
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/AddVideoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-17.653847" vertical-offset="51" max-vertical-offset="1105">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+          <folding>
+            <element signature="e#129#163#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/EditPlaylistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+=======
         <state vertical-scroll-proportion="0.33766234" vertical-offset="353" max-vertical-offset="969">
           <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
         </state>
@@ -657,20 +1067,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37578288" vertical-offset="0" max-vertical-offset="479">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+>>>>>>> prisca
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/AddVideo/addvideo.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.33816424" vertical-offset="827" max-vertical-offset="1496">
+          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+=======
         <state vertical-scroll-proportion="0.70238096" vertical-offset="1116" max-vertical-offset="1620">
           <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/GestionUtilisateur/afficheuser.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61504424" vertical-offset="63" max-vertical-offset="765">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -678,13 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Entity/VideoRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="679">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -723,68 +1124,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Entity/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.25" vertical-offset="45" max-vertical-offset="3315">
-          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/EditVideo/updatevideo.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22900763" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Form/VideoType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5954198" vertical-offset="0" max-vertical-offset="795">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="855">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/AddVideo/addform.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="850">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/AddVideo/gestionvideo.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="442">
-          <caret line="15" column="88" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/EditVideoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.576923" vertical-offset="470" max-vertical-offset="1139">
-          <caret line="56" column="69" selection-start-line="56" selection-start-column="69" selection-end-line="56" selection-end-column="69" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="816">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <marker date="1429015030135" expanded="true" signature="1214:1231" placeholder="requirements:" />
+            <marker date="1429015030135" expanded="true" signature="1281:1408" placeholder="mmitv_deletevideo:" />
+            <marker date="1429015030135" expanded="true" signature="1350:1408" placeholder="defaults :" />
+            <marker date="1429015030135" expanded="true" signature="1364:1408" placeholder="requirements:" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Controller/AddVideoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847" vertical-offset="51" max-vertical-offset="1105">
-          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
-          <folding>
-            <element signature="e#129#163#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="289">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -798,8 +1155,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mmitv/BackBundle/Resources/views/AddVideo/addvideo.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33816424" vertical-offset="827" max-vertical-offset="1496">
-          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.3338633" vertical-offset="6981" max-vertical-offset="7633">
+          <caret line="422" column="36" selection-start-line="422" selection-start-column="36" selection-end-line="422" selection-end-column="36" />
+>>>>>>> prisca
           <folding />
         </state>
       </provider>

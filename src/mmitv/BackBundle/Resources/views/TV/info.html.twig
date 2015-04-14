@@ -1,0 +1,17 @@
+<div class="annonce">
+    {% for info in infos %}
+        <h1>{{ info.infosType|upper }}</h1>
+        <p>{{ info.infosContenu }}</p>
+    {% endfor %}
+</div>
+<script>
+
+    $( document ).ready(function() {
+
+        $(".annonce").delay(10000).animate({left:"-1500px"}, 1800)
+                .delay(4000).animate({left:"-200px"}, 1500)
+                .delay(4000).animate({left:"-1500px"}, 1500)
+
+    });
+
+</script>
