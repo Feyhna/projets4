@@ -15,13 +15,9 @@
         <div class="row-fluid">
 
             {% if is_granted('ROLE_REDACTEUR') %}
-                <a href="{{ path('mmitv_createplaylist') }}" class="quick-button metro yellow span2">
-                    <i class="icon-align-justify"></i>
-                    <p>Créer une playlist</p>
-                </a>
                 <a href="{{ path('mmitv_editplaylist') }}" class="quick-button metro red span2">
                     <i class="icon-tasks"></i>
-                    <p>Modifier une playlist</p>
+                    <p>Gérer les playlists</p>
                     <span class="badge">13</span>
                 </a>
                 <a href="#" class="quick-button metro blue span2">

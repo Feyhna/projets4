@@ -1,0 +1,118 @@
+{% extends 'mmitvBackBundle::layoutdashboard.html.twig' %}
+
+{% block title %} {{ parent() }}- Modifier une playlist{% endblock %}
+
+{% block body %}
+    <div id="content" class="span10">
+
+    {% block breadcrumb %}
+        {{ parent() }}
+        <li><a href="#">Gérer les playlists</a></li>
+        </ul>
+    {% endblock %}
+
+    <div class="row-fluid sortable">
+        <div class="box span12">
+            <div class="box-header" data-original-title>
+                <h2><i class="halflings-icon user"></i><span class="break"></span>{{ playlist.playlistNom }}</h2>
+
+                <div class="box-icon">
+                    <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                </div>
+            </div>
+
+            <div class="box-content">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Date d'ajout</th>
+                        <th>Catégorie</th>
+                        <th>Plateforme</th>
+                        <th>Supprimer</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for video in playlist.video %}
+                        <tr>
+                            <td>{{ video.videoNom }}</td>
+                            <td>{{ video.videoAjout|date('d/m/Y') }}</td>
+                            <td>{{ video.videoType }}</td>
+                            <td>{{ video.videoPlateforme }}</td>
+                            <td>
+                                <a class="btn btn-danger"
+                                   href="{{ path('mmitv_removevideoplaylist', {playlist_id: playlist.id, video_id: video.id}) }}">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div class="pagination pagination-centered">
+                    <ul>
+                        <li><a href="#">Préc.</a></li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Suiv.</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box-header" data-original-title>
+            <h2><i class="halflings-icon user"></i><span class="break"></span>Toutes les vidéos</h2>
+
+            <div class="box-icon">
+                <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+            </div>
+        </div>
+        <div class="box-content">
+            <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Date d'ajout</th>
+                    <th>Catégorie</th>
+                    <th>Plateforme</th>
+                    <th>Ajouter à {{ playlist.playlistNom }}</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                {% for video in videos %}
+                    <tr>
+                        <td>{{ video.videoNom }}</td>
+                        <td class="center">{{ video.videoAjout|date('d/m/Y') }}</td>
+                        <td class="center">{{ video.videoType }}</td>
+                        <td class="center">
+                            {{ video.videoPlateforme }}
+                        </td>
+                        <td class="center">
+                            {% if video in playlist.video %}
+                                Vidéo déjà dans la playlist
+
+                                {% else %}
+                                <a class="btn btn-success center"
+                                   href="{{ path('mmitv_addvideoplaylist', {playlist_id:playlist.id, video_id:video.id}) }}">
+                                    <i class="halflings-icon white plus"></i>
+                                </a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+        <!--/.fluid-container-->
+
+        <!-- end: Content -->
+    </div><!--/#content.span10-->
+
+{% endblock %}

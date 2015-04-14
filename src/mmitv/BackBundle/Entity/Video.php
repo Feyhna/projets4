@@ -64,6 +64,11 @@ class Video
 
     private $videoAjout;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="mmitv\BackBundle\Entity\Playlist", inversedBy="video")
+     */
+    protected $playlist;
+
 
     /**
      * Get id
@@ -211,5 +216,45 @@ class Video
     public function getVideoAjout()
     {
         return $this->videoAjout;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->playlist = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add playlist
+     *
+     * @param \mmitv\BackBundle\Playlist $playlist
+     * @return Video
+     */
+    public function addPlaylist(\mmitv\BackBundle\Entity\Playlist $playlist)
+    {
+        $this->playlist[] = $playlist;
+
+        return $this;
+    }
+
+    /**
+     * Remove playlist
+     *
+     * @param \mmitv\BackBundle\Playlist $playlist
+     */
+    public function removePlaylist(\mmitv\BackBundle\Entity\Playlist $playlist)
+    {
+        $this->playlist->removeElement($playlist);
+    }
+
+    /**
+     * Get playlist
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPlaylist()
+    {
+        return $this->playlist;
     }
 }

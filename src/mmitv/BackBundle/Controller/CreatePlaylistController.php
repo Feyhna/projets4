@@ -12,6 +12,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class CreatePlaylistController extends Controller
 {
     public function createAction(){
+
+
+
         return $this->render('mmitvBackBundle:CreatePlaylist:createplaylist.html.twig');
     }
 }

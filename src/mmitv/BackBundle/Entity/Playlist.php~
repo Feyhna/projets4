@@ -31,16 +31,21 @@ class Playlist
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="playlist_duree", type="time")
+     * @ORM\Column(name="playlist_duree", type="time", nullable=true)
      */
-    private $playlistDuree;
+    private $playlistDuree=null;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="playlist_datetime", type="datetime")
+     * @ORM\Column(name="playlist_datetime", type="datetime", nullable=true)
      */
-    private $playlistDatetime;
+    private $playlistDatetime=null;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="mmitv\BackBundle\Entity\Video", mappedBy="playlist")
+     */
+    protected $video;
 
 
     /**
@@ -120,5 +125,45 @@ class Playlist
     public function getPlaylistDatetime()
     {
         return $this->playlistDatetime;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->video = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add video
+     *
+     * @param \mmitv\BackBundle\Video $video
+     * @return Playlist
+     */
+    public function addVideo(\mmitv\BackBundle\Video $video)
+    {
+        $this->video[] = $video;
+
+        return $this;
+    }
+
+    /**
+     * Remove video
+     *
+     * @param \mmitv\BackBundle\Video $video
+     */
+    public function removeVideo(\mmitv\BackBundle\Video $video)
+    {
+        $this->video->removeElement($video);
+    }
+
+    /**
+     * Get video
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getVideo()
+    {
+        return $this->video;
     }
 }
