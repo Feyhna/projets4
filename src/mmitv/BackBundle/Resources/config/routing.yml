@@ -130,5 +130,8 @@ mmitv_addplaylistprogramme:
 
 mmitv_ifaceTV_info:
     path:   /tv/json
-    defaults: {_controller: mmitvBackBundle:TV:infosJson,_format:json}
+    defaults: { _controller: mmitvBackBundle:TV:infosJson,_format:json}
 
+mmitv_emploidutemps:
+    path:   /dashboard/emploidutemps
+    defaults: { _controller: mmitvBackBundle:EmploiDuTemps:getEDT}
