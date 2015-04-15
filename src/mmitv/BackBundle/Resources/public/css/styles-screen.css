@@ -75,7 +75,7 @@ video {
 	opacity:0.93;
 	position:absolute;
 	bottom:-30px;
-	left:-200px;
+	left:-1500px;
 	transform:skewX(35deg);
 	-ms-transform:skewX(35deg);
 	-moz-transform:skewX(35deg); 

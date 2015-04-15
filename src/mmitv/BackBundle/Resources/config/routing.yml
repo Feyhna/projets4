@@ -97,3 +97,6 @@ mmitv_info_edit:
     path:   /dashboard/infos/modifier/{id}
     defaults: {_controller: mmitvBackBundle:Info:edit}
 
+mmitv_ifaceTV_info:
+    path:   /tv/json
+    defaults: {_controller: mmitvBackBundle:TV:infosJson,_format:json}

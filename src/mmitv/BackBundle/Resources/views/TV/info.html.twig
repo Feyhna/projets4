@@ -1,16 +1,38 @@
 <div class="annonce">
-    {% for info in infos %}
-        <h1>{{ info.infosType|upper }}</h1>
-        <p>{{ info.infosContenu }}</p>
-    {% endfor %}
+    <h1 id="titre"></h1>
+    <p id="contenu"></p>
 </div>
 <script>
 
     $( document ).ready(function() {
+        var infos = [];
+        var i = 0;
+        var j =0;
+        $.ajax({
+            url: '{{ path("mmitv_ifaceTV_info") }}',
+            dataType: 'json',
+            async: false,
+            success: function(info){
+                infos.push(info)
+            }
+        });
+        /*console.log(infos);
+        console.log(infos[0].length);
+        infos.length pour longueur du tableau*/
 
-        $(".annonce").delay(10000).animate({left:"-1500px"}, 1800)
-                .delay(4000).animate({left:"-200px"}, 1500)
-                .delay(4000).animate({left:"-1500px"}, 1500)
+        setInterval(function(){
+             document.getElementById('titre').innerHTML = infos[0][j]['infosType'];
+             document.getElementById('contenu').innerHTML = infos[0][j]['infosContenu'];
+             //console.log(infos[0][j]['id']);
+             j++;
+             $(".annonce").delay(1500).animate({left: "-200px"}, 1500)
+                     .delay(1500).animate({left: "-1500px"}, 1500);
+
+            if(j == infos[0].length){
+                j = 0;
+            }
+        },
+        6000);
 
     });
 
