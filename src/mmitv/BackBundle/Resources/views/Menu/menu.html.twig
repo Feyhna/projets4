@@ -7,8 +7,7 @@
             {% if is_granted('ROLE_REDACTEUR') %}
                 <li><a href="{{ path('mmitv_editplaylist') }}"><i class="icon-tasks"></i><span class="hidden-tablet"> Gérer les playlists</span></a></li>
                 <li><a href="{{ path('mmitv_info') }}"><i class="icon-edit"></i><span class="hidden-tablet"> Gestion des infos</span></a></li>
-                <li><a href="#"><i class="icon-eye-open"></i><span class="hidden-tablet"> Créer un programme</span></a></li>
-                <li><a href="#"><i class="icon-dashboard"></i><span class="hidden-tablet"> Modifier un programme</span></a></li>
+                <li><a href="{{ path('mmitv_indexprogramme') }}"><i class="icon-dashboard"></i><span class="hidden-tablet"> Gestion des programmes</span></a></li>
                 <li><a href="{{ path('mmitv_grille') }}"><i class="icon-calendar"></i><span class="hidden-tablet"> Voir la grille</span></a></li>
             {% endif %}
             {% if is_granted('ROLE_ADMIN') %}

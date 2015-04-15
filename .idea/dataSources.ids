@@ -9,7 +9,6 @@
     <schema name="" catalog="mmitv"/>
     <table name="Infos" schema="" catalog="mmitv" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="infos_nom" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="infos_type" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="infos_contenu" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
       <primary-key name="PRIMARY" columns="id"/>
@@ -17,10 +16,18 @@
     <table name="Playlist" schema="" catalog="mmitv" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="playlist_nom" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
-      <column name="playlist_duree" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92"/>
-      <column name="playlist_datetime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="playlist_duree" sqlType="TIME" precision="8" scale="0" nullable="true" jdbcType="92"/>
+      <column name="playlist_datetime" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_E2279DC6BBD148" table="playlist_programme" schema="" catalog="mmitv" columns="playlist_id"/>
       <exported-key name="FK_7F0023916BBD148" table="video_playlist" schema="" catalog="mmitv" columns="playlist_id"/>
+    </table>
+    <table name="Programme" schema="" catalog="mmitv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="programme_nom" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="programme_datetime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_E2279DC62BB7AEE" table="playlist_programme" schema="" catalog="mmitv" columns="programme_id"/>
     </table>
     <table name="Tweet" schema="" catalog="mmitv" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -59,6 +66,15 @@
       <primary-key name="PRIMARY" columns="id"/>
       <index name="UNIQ_957A647992FC23A8" unique="true" columns="username_canonical"/>
       <index name="UNIQ_957A6479A0D96FBF" unique="true" columns="email_canonical"/>
+    </table>
+    <table name="playlist_programme" schema="" catalog="mmitv" type="TABLE">
+      <column name="playlist_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="programme_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="playlist_id,programme_id"/>
+      <foreign-key name="FK_E2279DC62BB7AEE" columns="programme_id" ref-table="Programme" ref-schema="" ref-catalog="mmitv" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="FK_E2279DC6BBD148" columns="playlist_id" ref-table="Playlist" ref-schema="" ref-catalog="mmitv" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <index name="IDX_E2279DC62BB7AEE" unique="false" columns="programme_id"/>
+      <index name="IDX_E2279DC6BBD148" unique="false" columns="playlist_id"/>
     </table>
     <table name="video_playlist" schema="" catalog="mmitv" type="TABLE">
       <column name="video_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>

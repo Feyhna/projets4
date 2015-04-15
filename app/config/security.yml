@@ -49,5 +49,5 @@ security:
         - { path: ^/dashboard/playlist, role: ROLE_REDACTEUR }
         - { path: ^/dashboard/playlist/.*, role: ROLE_REDACTEUR }
         - { path: ^/dashboard/grille, role: ROLE_REDACTEUR }
-        - { path: ^/dashboard/gestion-utilisateur/.*, role: ROLE_SUPER_ADMIN}
-        - { path: ^/dashboard/gestion-utilisateur, role: ROLE_SUPER_ADMIN}
+        - { path: ^/dashboard/gestion-utilisateur/.*, role: ROLE_ADMIN}
+        - { path: ^/dashboard/gestion-utilisateur, role: ROLE_ADMIN}

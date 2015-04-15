@@ -4,7 +4,7 @@
         <td class="center">{{ video.videoAjout|date('d/m/Y') }}</td>
         <td class="center">{{ video.videoType }}</td>
         <td class="center">
-            <span class="label label-info">Non utilisée</span>
+            {{ video.videoPlateforme }}
         </td>
         <td class="center">
             <a class="btn btn-success" target="_blank" href="http://{{ video.videoHref }}">

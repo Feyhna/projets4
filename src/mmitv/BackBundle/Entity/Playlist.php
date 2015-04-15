@@ -47,6 +47,11 @@ class Playlist
      */
     protected $video;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="mmitv\BackBundle\Entity\Programme", inversedBy="playlist")
+     */
+    protected $programme;
+
 
     /**
      * Get id
@@ -166,5 +171,51 @@ class Playlist
     public function getVideo()
     {
         return $this->video;
+    }
+
+    /**
+     * Set programme
+     *
+     * @param \mmitv\BackBundle\Entity\Programme $programme
+     * @return Playlist
+     */
+    public function setProgramme(\mmitv\BackBundle\Entity\Programme $programme = null)
+    {
+        $this->programme = $programme;
+
+        return $this;
+    }
+
+    /**
+     * Get programme
+     *
+     * @return \mmitv\BackBundle\Entity\Programme 
+     */
+    public function getProgramme()
+    {
+        return $this->programme;
+    }
+
+    /**
+     * Add programme
+     *
+     * @param \mmitv\BackBundle\Entity\Programme $programme
+     * @return Playlist
+     */
+    public function addProgramme(\mmitv\BackBundle\Entity\Programme $programme)
+    {
+        $this->programme[] = $programme;
+
+        return $this;
+    }
+
+    /**
+     * Remove programme
+     *
+     * @param \mmitv\BackBundle\Entity\Programme $programme
+     */
+    public function removeProgramme(\mmitv\BackBundle\Entity\Programme $programme)
+    {
+        $this->programme->removeElement($programme);
     }
 }

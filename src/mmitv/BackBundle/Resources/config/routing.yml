@@ -97,3 +97,32 @@ mmitv_info_edit:
     path:   /dashboard/infos/modifier/{id}
     defaults: {_controller: mmitvBackBundle:Info:edit}
 
+mmitv_indexprogramme:
+    path: /dashboard/programmes
+    defaults: { _controller: mmitvBackBundle:GestionProgramme:index}
+
+mmitv_removeprogramme:
+    path: /dashboard/programmes/remove/{id}
+    defaults: { _controller: mmitvBackBundle:GestionProgramme:removeProgramme}
+    requirements:
+        id: \d*
+
+mmitv_updateprogramme:
+    path: /dashboard/programmes/update/{id}
+    defaults: { _controller: mmitvBackBundle:GestionProgramme:updateProgramme}
+    requirements:
+        id: \d*
+
+mmitv_removeplaylistprogramme:
+    path: /dashboard/programmes/update/remove/{programme_id}/{playlist_id}
+    defaults: { _controller: mmitvBackBundle:GestionProgramme:removePlaylistProgramme}
+    requirements:
+        programme_id: \d*
+        playlist_id: \d*
+
+mmitv_addplaylistprogramme:
+    path: /dashboard/programmes:update/add/{programme_id}/{playlist_id}
+    defaults: { _controller: mmitvBackBundle:GestionProgramme:addPlaylistProgramme}
+    requirements:
+        programme_id: \d*
+        playlist_id: \d*
