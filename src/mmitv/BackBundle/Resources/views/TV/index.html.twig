@@ -2,10 +2,7 @@
 {% block body %}
 {{ parent() }}
                           <!-- Ecran vidéo -->
-		<video id="video" controls preload="auto" style="position:absolute z-index:1000" >
-        <source src="video/interview Webtv3.mp4" type='video/mp4'>
-            <p>Si la vidéo n'est pas lisible, mettez à jour vos pluggins.</p>
-        </video>
+		<div id="player"></div>
 
                           <!-- Bug -->
         {{ render(controller('mmitvBackBundle:TV:bug')) }}
@@ -22,31 +19,45 @@
 
 
 <script type="text/javascript">
-$(document).ready(function(){
-          $("#hide-bottom").delay(500).slideToggle(3000)
-                          .delay(20000).slideToggle(3000)
-                          .delay(500).slideToggle(3000);
-  });
-$( document ).ready(function() {
-  $(".title-bug").delay(4000).animate({right:"-695px"},1800)
-                .delay(5000).animate({right:"295px"},1800)
-                .delay(5000).animate({right:"-695px"},1800);
 
+    //Charge Iframe Player API youtube
+    var tag = document.createElement('script');
 
-});
-$(document).ready(function(){
-          $(".container-groupe").delay(500).slideToggle(3000)
-                          .delay(20000).slideToggle(3000)
-                          .delay(500).slideToggle(3000);
-  });
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-$( document ).ready(function() {
+    //créer l'iframe après que le code api soit dl
+    var player;
+    function onYouTubeIframeAPIReady(){
+        player = new YT.Player('player', {
+            height: '1080',
+            width: '1920',
+            videoId: 'ql8K3KJyWgY',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
 
-  $(".bug-text").delay(4000).animate({right:"-1077px"}, 1800)
-                .delay(6000).animate({right:"-27px"}, 1500)
-                .delay(4000).animate({right:"-1077px"}, 1500);
+    //API appelle cette function quand video player = ready
 
-});
+    function onPlayerReady(event){
+        event.target.playVideo();
+    }
+
+    // quand state=1(quand video en lecture), 6sec de video puis stop
+    var done = false;
+    function onPlayerStateChange(event){
+        if(event.data == YT.PlayerState.PLAYING && !done){
+            setTimeout(stopVideo, 6000);
+            done = true;
+        }
+    }
+    function stopVideo(){
+        player.stopVideo();
+    }
 
 </script>
 
