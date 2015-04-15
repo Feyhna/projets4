@@ -21,6 +21,7 @@ class InfoController extends Controller
 
         $infos = $em->findAll();
 
+
         return $this->render('mmitvBackBundle:Info:index.html.twig', array(
             'infos' => $infos
         ));
@@ -93,5 +94,6 @@ class InfoController extends Controller
             'info' => $info
         ));
     }
+
 
 }

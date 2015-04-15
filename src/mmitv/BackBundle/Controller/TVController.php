@@ -10,6 +10,10 @@ namespace mmitv\BackBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use mmitv\BackBundle\Entity\Infos;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\Serializer\Encoder\JsonEncoder;
+use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
 
 class TVController extends Controller
 {
@@ -25,13 +29,30 @@ class TVController extends Controller
 
     public function infoAction(){
 
-        $em = $this->getDoctrine()->getManager()->getRepository('mmitvBackBundle:Infos');
+        $infos = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('mmitvBackBundle:Infos')
+            ->findAll();
 
-        $infos = $em->findAll();
+        return $this->render('mmitvBackBundle:TV:info.html.twig'
+        );
+    }
 
-        return $this->render('mmitvBackBundle:TV:info.html.twig', array(
-            'infos' => $infos
-        ));
+    public function infosJsonAction(){
+        $infos = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('mmitvBackBundle:Infos')
+            ->findAll();
+
+        $encoders = array(new JsonEncoder());
+        $normalizers = array(new GetSetMethodNormalizer());
+        $serializer = new Serializer($normalizers, $encoders);
+
+        $response = new Response($serializer->serialize($infos, "json"));
+        $response->headers->set('Content-Type', 'application/json');
+
+        return $response;
+
     }
 
     public function bugAction(){

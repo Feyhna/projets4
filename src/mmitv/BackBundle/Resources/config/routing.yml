@@ -97,6 +97,7 @@ mmitv_info_edit:
     path:   /dashboard/infos/modifier/{id}
     defaults: {_controller: mmitvBackBundle:Info:edit}
 
+
 mmitv_indexprogramme:
     path: /dashboard/programmes
     defaults: { _controller: mmitvBackBundle:GestionProgramme:index}
@@ -126,3 +127,8 @@ mmitv_addplaylistprogramme:
     requirements:
         programme_id: \d*
         playlist_id: \d*
+
+mmitv_ifaceTV_info:
+    path:   /tv/json
+    defaults: {_controller: mmitvBackBundle:TV:infosJson,_format:json}
+
