@@ -17,6 +17,7 @@
 
                 <div class="box-header" data-original-title>
                     <h2><i class="halflings-icon user"></i><span class="break"></span>Ajouter une vidéo</h2>
+
                     <div class="box-icon">
                         <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
                     </div>
@@ -29,8 +30,11 @@
                     #}
                     {{ render(controller('mmitvBackBundle:AddVideo:addform')) }}
                 </div>
+
+                {% if is_granted('ROLE_REDACTEUR') %}
                 <div class="box-header" data-original-title>
                     <h2><i class="halflings-icon user"></i><span class="break"></span>Vidéos ajoutées</h2>
+
                     <div class="box-icon">
                         <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
                     </div>
@@ -72,9 +76,11 @@
                 </div>
                 <!--/span-->
 
-            </div><!--/row-->
-
-        </div><!--/.fluid-container-->
+            </div>
+            <!--/row-->
+            {% endif %}
+        </div>
+        <!--/.fluid-container-->
 
         <!-- end: Content -->
     </div><!--/#content.span10-->

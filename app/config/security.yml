@@ -44,7 +44,7 @@ security:
         - { path: ^/register$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resseting$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/dashboard$, role: IS_AUTHENTICATED_FULLY }
-        - { path: ^/dashboard/video, role: ROLE_REDACTEUR }
+        - { path: ^/dashboard/video, role: ROLE_USER }
         - { path: ^/dashboard/video/.*, role: ROLE_REDACTEUR }
         - { path: ^/dashboard/playlist, role: ROLE_REDACTEUR }
         - { path: ^/dashboard/playlist/.*, role: ROLE_REDACTEUR }

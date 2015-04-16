@@ -14,17 +14,17 @@
 
         <div class="row-fluid">
 
+            <a href="{{ path('mmitv_addvideo') }}" class="quick-button metro pink span2">
+                <i class="icon-envelope"></i>
+                <p>Ajouter une vidéo</p>
+            </a>
             {% if is_granted('ROLE_REDACTEUR') %}
                 <a href="{{ path('mmitv_editplaylist') }}" class="quick-button metro red span2">
                     <i class="icon-tasks"></i>
                     <p>Gérer les playlists</p>
                 </a>
-                <a href="#" class="quick-button metro blue span2">
-                    <i class="icon-bar-chart"></i>
-                    <p>Créer un programme</p>
-                </a>
                 <a href="#" class="quick-button metro green span2">
-                    <i class="icon-barcode"></i>
+                    <i class="icon-dashboard"></i>
                     <p>Mod. un programme</p>
                 </a>
                 <a href="{{ path('mmitv_grille') }}" class="quick-button metro black span2">
@@ -32,10 +32,7 @@
                     <p>Voir la grille</p>
                 </a>
             {% endif %}
-            <a href="{{ path('mmitv_addvideo') }}" class="quick-button metro pink span2">
-                <i class="icon-envelope"></i>
-                <p>Ajouter une vidéo</p>
-            </a>
+
 
             <div class="clearfix"></div>
 
