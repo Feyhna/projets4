@@ -129,6 +129,10 @@ mmitv_addplaylistprogramme:
         playlist_id: \d*
 
 mmitv_ifaceTV_info:
-    path:   /tv/json
+    path:   /tv/infos-json
     defaults: {_controller: mmitvBackBundle:TV:infosJson,_format:json}
+
+mmitv_ifaceTV_video:
+    path:   /tv/videos-json
+    defaults: {_controller: mmitvBackBundle:TV:videosJson,_format:json}
 
