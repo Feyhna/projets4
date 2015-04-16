@@ -7,7 +7,7 @@
             {{ video.videoPlateforme }}
         </td>
         <td class="center">
-            <a class="btn btn-success" target="_blank" href="http://www.youtube.com/watch?v={{ video.videoHref }}">
+            <a class="btn btn-success" target="_blank" href="http://www.youtube.com/watch=v?{{ video.videoHref }}">
                 <i class="halflings-icon white zoom-in"></i>
             </a>
             <a class="btn btn-info" href="{{ path('mmitv_updatevideo', {'id': video.id}) }}">

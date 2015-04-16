@@ -11,7 +11,6 @@ use mmitv\BackBundle\Entity\Video;
 use mmitv\BackBundle\Form\VideoType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use mmitv\BackBundle\Entity\YoutubeVid;
 
 class AddVideoController extends Controller
 {
@@ -27,12 +26,6 @@ class AddVideoController extends Controller
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($video);
-            $em->flush();
-
-            $youtubevid = new YoutubeVid();
-            $youtubevid->setIdlink($video->getVideoHref());
-            $youtubevid->setProg($video->getVideoType());
-            $em->persist($youtubevid);
             $em->flush();
 
             $request->getSession()->getFlashbag()->add('notice', 'Video ajoutée');

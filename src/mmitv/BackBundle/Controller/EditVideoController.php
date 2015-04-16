@@ -2,7 +2,6 @@
 namespace mmitv\BackBundle\Controller;
 
 use mmitv\BackBundle\Entity\Video;
-use mmitv\BackBundle\Entity\YoutubeVid;
 use mmitv\BackBundle\Form\VideoType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -51,13 +50,6 @@ class EditVideoController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $video = $em->getRepository('mmitvBackBundle:Video')->find($id);
-
-        $idlink = $video->getVideoHref();
-
-        $youtubevid = $em->getRepository('mmitvBackBundle:YoutubeVid')->findOneBy(array('idlink'   =>  $idlink));
-
-        $em->remove($youtubevid);
-        $em->flush();
 
         $em->remove($video);
         $em->flush();
