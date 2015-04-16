@@ -129,9 +129,16 @@ mmitv_addplaylistprogramme:
         playlist_id: \d*
 
 mmitv_ifaceTV_info:
-    path:   /tv/json
-    defaults: { _controller: mmitvBackBundle:TV:infosJson,_format:json}
+<<<<<<< HEAD
+    path:   /tv/infos-json
+    defaults: {_controller: mmitvBackBundle:TV:infosJson,_format:json}
 
 mmitv_emploidutemps:
     path:   /dashboard/emploidutemps
     defaults: { _controller: mmitvBackBundle:EmploiDuTemps:getEDT}
+
+mmitv_ifaceTV_video:
+    path:   /tv/videos-json
+    defaults: {_controller: mmitvBackBundle:TV:videosJson,_format:json}
+
+>>>>>>> parent of 6f4729b... Revert "Pré-prod"
